@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone App</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<section id="app-view"></section>
+
+
+	<container>
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			    <h3 class="panel-title">
+			    	KISS
+			    </h3>
+			    <div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					    Settings
+					    <span class="caret"></span>
+					  </button>
+				  	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log Off</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Change Username</a></li>
+				  	</ul>
+				</div>
+		  </div>
+
+		  <div class="panel-body col-md-6 message-room">
+		  </div>
+
+		  <div class="panel-footer">
+			  	<div class="row">
+					  <div class="col-lg-6">
+					    <div class="input-group">
+					      <input type="text" class="form-control message-box" placeholder="Text...">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default send-button" type="button">Submit</button>
+					      </span>
+					    </div>
+					  </div>
+					</div>
+			  	</div>
+		</div>
+	</container>
+
+	<!-- These are my templates -->
+	<script type="text/html" id="my-message">
+			<div class="well well-lg user1">
+				<dl class="dl-horizontal">
+					<dt><%= name %><%= time %></dt>
+					<dd><%= message %></dd>
+				</dl>
+			</div>
+	</script>
+
+	<!-- These are my library files -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/underscore/underscore-min.js"></script>
+	<script src="bower_components/backbone/backbone.js"></script>
+
+	<!-- These are my view files -->
+	<script src="scripts/views/MessageView.js"></script>
+	<script src="scripts/views/AppView.js"></script>
+
+	<!-- These are my main files -->
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>

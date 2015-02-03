@@ -1,0 +1,30 @@
+.panel-body {
+	height: 39em;
+	overflow-y: scroll;
+}
+
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+	right: 0;
+}
+
+.panel-title {
+	display: inline-block;
+}
+
+.user1 {
+	background-color: #0071FB;
+	color: white;
+}
+
+.user2 {
+	background-color: #1428C4;
+	color: white;
+}
+
+.dl-horizontal dt {
+	width: 15em;
+	margin-right: 1em;
+}
