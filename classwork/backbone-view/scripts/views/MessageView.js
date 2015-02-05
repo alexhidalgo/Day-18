@@ -8,7 +8,7 @@ var MessageView = Backbone.View.extend({
 
 		_.bindAll(
 			this,
-			'onMessageClick'
+			''
 		);
 
 		var template = _.template($('#my-message').html());
